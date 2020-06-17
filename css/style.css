@@ -940,6 +940,11 @@ body.lock {
   color: #000000;
 }
 
+.footer a:hover {
+  background-color: #ff5c36;
+  color: #ffffff;
+}
+
 .link {
   display: flex;
   justify-content: center;
@@ -1076,10 +1081,10 @@ body.lock {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ff5c36;
+  background-color: #ffffff;
   box-shadow: 2px 11px 20px rgba(20, 20, 21, 0.08);
   border-radius: 27px;
-  color: #ffffff;
+  color: #000;
   font-family: "Open Sans";
   font-size: 16px;
   font-weight: 400;
@@ -1087,7 +1092,18 @@ body.lock {
 }
 
 .send-block__button a::after {
-  content: url(../img/icons/arrow.png);
+  content: url(../img/icons/arrow_b.png);
+  position: relative;
+  left: 17px;
+}
+
+.send-block__button a:hover {
+  background-color: #ff5c36;
+  color: #ffffff;
+}
+
+.send-block__button a:hover::after {
+  content: url(../img/icons/arrow_w.png);
   position: relative;
   left: 17px;
 }
@@ -1177,22 +1193,15 @@ body.lock {
 }
 
 .card__button::before {
-  content: "";
-  width: 2px;
-  height: 16px;
+  content: url(../img/icons/cross_b.png);
   position: absolute;
-  left: 50px;
-  background-color: #000000;
-  opacity: 0.5;
+  margin-top: 2px;
+  left: 40px;
 }
 
-.card__button::after {
-  content: "";
-  width: 16px;
-  height: 2px;
-  background-color: #000000;
-  position: absolute;
-  left: 43px;
+.card__button:hover {
+  background-color: #ff5c36;
+  color: #ffffff;
 }
 
 .featured-block__body {
@@ -1312,22 +1321,15 @@ body.lock {
 }
 
 .services-block__button::before {
-  content: "";
-  width: 2px;
-  height: 16px;
+  content: url(../img/icons/cross_b.png);
   position: absolute;
-  left: 50px;
-  background-color: #000000;
-  opacity: 0.5;
+  margin-top: 2px;
+  left: 40px;
 }
 
-.services-block__button::after {
-  content: "";
-  width: 16px;
-  height: 2px;
-  background-color: #000000;
-  position: absolute;
-  left: 43px;
+.services-block__button:hover {
+  background-color: #ff5c36;
+  color: #ffffff;
 }
 
 .team-block {
@@ -1416,6 +1418,27 @@ body.lock {
   position: relative;
 }
 
+.span-bar {
+  width: 123px;
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #ff6e47;
+}
+
+.span-bar_1 {
+  width: 109px;
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #ff6e47;
+}
+
+.span-bar_2 {
+  width: 118px;
+  height: 4px;
+  border-radius: 1.5px;
+  background-color: #ff6e47;
+}
+
 .skills {
   height: 300px;
 }
@@ -1433,27 +1456,6 @@ body.lock {
   width: 151px;
   height: 4px;
   background-color: #817f7e;
-}
-
-.skills__bar .span {
-  width: 123px;
-  height: 4px;
-  border-radius: 1.5px;
-  background-color: #ff6e47;
-}
-
-.skills__bar .span_1 {
-  width: 109px;
-  height: 4px;
-  border-radius: 1.5px;
-  background-color: #ff6e47;
-}
-
-.skills__bar .span_2 {
-  width: 118px;
-  height: 4px;
-  border-radius: 1.5px;
-  background-color: #ff6e47;
 }
 
 .skills__name {
