@@ -716,6 +716,7 @@ body {
 }
 
 body.lock {
+  padding-right: 17px;
   overflow: hidden;
 }
 
@@ -1043,7 +1044,7 @@ body.lock {
   line-height: 25px;
 }
 
-.send-block__title font {
+.send-block__title span {
   color: #ff5c36;
   font-family: "Open Sans - Semibold";
   font-weight: 600;
@@ -1689,6 +1690,10 @@ body.lock {
 }
 
 @media (max-width: 768px) {
+  body.lock {
+    padding-right: 0;
+  }
+
   .team-block__row {
     margin-top: 60px;
   }
